@@ -25,3 +25,16 @@ export const withoutString = (Array)=>{
     }
     return newArr;
 }
+
+export const pairImpair = (Array)=>{
+    let newArr = [[],[]];
+    for(let i = 0; i < Array.length; i++){
+        if(Array[i]%2 == 1 || Array[i]%2 == -1){
+            newArr[0].push(Array[i]);
+        }
+        else{
+            newArr[1].push(Array[i]);
+        }
+    }
+    return newArr;
+}

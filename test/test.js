@@ -58,17 +58,17 @@ describe('Array', function () {
 import { pairImpair } from '../js/app.js';
 describe('Array', function () {
     describe('pairImpair()', function () {
-      it('should return [-2, -5, -1]', function () {
+      it('should return [[-5, -3],[-10, -8]]', function () {
           assert.deepEqual(pairImpair([-5, -10, -8, -3]), [[-5, -3],[-10, -8]]);
       });
-      it('should return [2, 8, 4, 4]', function () {
+      it('should return [[7, 9],[2, 4, 8]]', function () {
           assert.deepEqual(pairImpair([2, 4, 7, 9, 8]), [[7, 9],[2, 4, 8]]);
       });
-      it('should return [10]', function () {
-          assert.deepEqual(pairImpair(['hey', 10]), [10]);
+      it('should return [[], [8, 10]]', function () {
+          assert.deepEqual(pairImpair([8, 10]), [[], [8, 10]]);
       });
-      it('should return []', function () {
-          assert.deepEqual(pairImpair([]), []);
+      it('should return [[],[]]', function () {
+          assert.deepEqual(pairImpair([]), [[],[]]);
       });
     });
   });
